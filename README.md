@@ -21,12 +21,12 @@ Follow the steps below to set up and run the dashboard:
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/draco-labes/draco-dashboard
+   git clone https://github.com/LightLabsOfficial/Light-Dashboard
    ```
 
 2. Navigate into the project directory:
    ```bash
-   cd draco-dashboard
+   cd light dashboard
    ```
 
 3. Install dependencies using Bun:
