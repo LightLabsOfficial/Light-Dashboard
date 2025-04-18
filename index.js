@@ -89,5 +89,10 @@ for (let i = 0; i < allRoutes.length; i++) {
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.listen(process.env.APP_PORT || 3000, () => {
-  console.log(`${color.green}${color.bold}Server${color.reset} | ${color.italic}${color.brightBlack}Molactyl has been started on ${process.env.APP_URL} !${color.reset}`);
+  console.log(`${color.green}${color.bold}Server${color.reset} | ${color.italic}${color.brightBlack}Light Dashboard has been started on ${process.env.APP_URL} !${color.reset}${color.white} ___ _       _                     ___   _______    
+|_ _| |_ ___| |    ___  __ _  __ _| \ \ / /_   _|   
+ | || __/ __| |   / _ \/ _` |/ _` | |\ V /  | |     
+ | || |_\__ \ |__|  __/ (_| | (_| | | | |   | |     
+|___|\__|___/_____\___|\__, |\__,_|_| |_|   |_|____ 
+                       |___/                 |_____|`);
 });
