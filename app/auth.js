@@ -50,23 +50,23 @@ async function checkAccount(email, username, id) {
       });
     
       // User already exists, log and return
-      console.log('User already exists in hydrapanel. User ID:', response.data.userId);
+      console.log('User already exists in Light Hosting. User ID:', response.data.userId);
       await db.set(`id-${email}`, response.data.userId);
       return;
     } catch (err) {
       if (err.response) {
         if (err.response.status === 400) {
           // User does not exist
-          console.log('User does not exist in hydrapanel');
+          console.log('User does not exist in Light Hosting');
           // You can handle actions here like returning an error or creating a new user
         } else if (err.response.status !== 404) {
           // Handle other HTTP errors
-          logError('Failed to check user existence in hydrapanel', err);
+          logError('Failed to check user existence in Light Hosting', err);
           throw err;
         }
       } else {
         // Handle network or other non-response errors
-        logError('Error during request to hydrapanel', err);
+        logError('Error during request to Light Hosting', err);
         throw err;
       }
     }    
