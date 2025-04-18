@@ -66,6 +66,6 @@ node .
 - **AFK Page**: Dedicated page for AFK users.
   ---------------------------------------------------
   - ## editors
-  - **hopingboyz**
+  - **itslegalyt_**
 
 This project is licensed under the terms of the repository's license. Check the `LICENSE` file for details.
